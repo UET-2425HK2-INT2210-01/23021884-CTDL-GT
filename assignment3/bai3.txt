@@ -1,0 +1,51 @@
+Khởi tạo queue bằng mảng
+
+class queue:
+    int *a
+    int max
+    int front
+    int rear
+    int size
+
+
+    function InitializeQueue(capacity):
+        max = capacity
+        a = new int[capacity]
+        front = 0
+        rear = -1
+        size = 0
+    end
+
+    function push(x):
+        If size = max:
+            return
+
+        rear = (rear + 1) % max
+        queue[rear] = x
+        size = size + 1
+    end
+
+    function pop():
+        If size = 0:
+            return
+
+        front = (front + 1) % max
+        size = size - 1
+    end
+
+    function print():
+        if size = 0:
+            return
+
+        index = front
+        for i from 0 to size - 1:
+            Print a[index]
+            index = (index + 1) % max
+    end
+end
+
+Nhận xét:
+- Khởi tạo: O(1)
+- Thêm phần tử: O(1)
+- Xóa phần tử: O(1)
+- In tất cả phần tử: O(n)

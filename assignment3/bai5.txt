@@ -1,0 +1,45 @@
+class queue:
+    int *a
+    int max
+    int top
+    int size
+
+
+    function InitializeStack(capacity):
+        max = capacity
+        a = new int[capacity]
+        top = -1
+        size = 0
+    end
+
+    function push(x):
+        if top == maxCapacity - 1:
+            return
+
+        top = top + 1
+        a[top] = x
+        size = size + 1
+    end
+
+    function pop():
+        if top == -1:
+            return
+
+        top = top - 1
+        size = size - 1
+    end
+
+    function print():
+        if top == -1:
+            return
+
+        For i from 0 to top:
+            Print a[i]
+    end
+end
+
+Nh?n xét:
+- Kh?i t?o: O(1)
+- Thêm ph?n t?: O(1)
+- Xóa ph?n t?: O(1)
+- In t?t c? ph?n t?: O(n)
