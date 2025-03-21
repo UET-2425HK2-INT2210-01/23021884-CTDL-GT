@@ -1,0 +1,3 @@
+Hai thuộc tính mong muốn của một hàm băm là:
+Tính xác định (Deterministic) – Cùng một đầu vào luôn tạo ra cùng một giá trị băm.
+Kháng va chạm (Collision Resistance) – Khó tìm được hai đầu vào khác nhau nhưng cho cùng một giá trị băm.
